@@ -1,4 +1,4 @@
-Hi! My name is Anton, and I do some technical stuff. I develop tools and services with Go, C, Python, and Bash. Also, I have good experience in writing RPM specs and building packages. Some of my projects:
+👋 Hi! My name is Anton, and I do some technical stuff. I develop tools and services with Go, C, Python, and Bash. Also, I have good experience in writing RPM specs and building packages. Some of my projects:
 
 <p align="center">
   <a href="https://kaos.sh/ek"><img width=260 heigh=120 src="https://andy.one/gh/1.png"/></a>
