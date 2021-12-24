@@ -1,4 +1,8 @@
-👋 Hi! My name is Anton, and I do some technical stuff. I develop tools and services with Go, C, Python, and Bash. Also, I have good experience in writing RPM specs and building packages. Some of my projects:
+👋 Hi! My name is Anton, and I do some technical stuff. I develop tools and services with Go, C, Python, and Bash. Also, I have good experience in writing RPM specs and building packages. 
+
+[![Readme Card](https://github-readme-stats.vercel.app/api?username=andyone&include_all_commits=true&count_private=true&show_icons=true&title_color=444&text_color=333&bg_color=fefefe&border_color=ddd&icon_color=888&border_radius=2)](https://andy.one)
+
+Some of my projects:
 
 <p align="center">
   <a href="https://kaos.sh/ek"><img width=33% src="https://kaos.sh/v/ek.svg"/></a>
@@ -21,5 +25,5 @@
 <p align="center">More projects made by me can be found on the <b><a href="https://github.com/essentialkaos">@essentialkaos</a></b> organization page.</p>
 
 <p align="center">
-  <a href="https://twitter.com/andy_one">Twitter</a> • <a href="https://dribbble.com/andyone">Dribble</a> • <a href="https://www.flickr.com/photos/andyindesign/">Flickr</a>
+  <b><a href="https://twitter.com/andy_one">Twitter</a> • <a href="https://dribbble.com/andyone">Dribble</a> • <a href="https://www.flickr.com/photos/andyindesign/">Flickr</a></b>
 </p>
