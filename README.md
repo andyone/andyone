@@ -25,5 +25,5 @@ Some of my projects:
 <p align="center">More projects made by me can be found on the <b><a href="https://github.com/essentialkaos">@essentialkaos</a></b> organization page.</p>
 
 <p align="center">
-  <b><a href="https://twitter.com/andy_one">Twitter</a> • <a href="https://dribbble.com/andyone">Dribble</a> • <a href="https://www.flickr.com/photos/andyindesign/">Flickr</a></b>
+  <a href="https://andy.one/twitter">Twitter</a> • <a href="https://andy.one/instagram">Instagram</a> • <a href="https://andy.one/dribble">Dribble</a> • <a href="https://andy.one/flickr">Flickr</a>
 </p>
