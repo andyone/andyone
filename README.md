@@ -1,7 +1,5 @@
 👋 Hi! My name is Anton, and I do some technical stuff. I develop tools and services with Go, C, Python, and Bash. Also, I have good experience in writing RPM specs and building packages. 
 
-[![Readme Card](https://github-readme-stats.vercel.app/api?username=andyone&include_all_commits=true&count_private=true&show_icons=true&title_color=444&text_color=333&bg_color=fefefe&border_color=ddd&icon_color=888&border_radius=2)](https://andy.one)
-
 Some of my projects:
 
 <p align="center">
