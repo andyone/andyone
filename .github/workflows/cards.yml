@@ -9,7 +9,7 @@ env:
   OPTIONS: title_color=333&text_color=333&icon_color=555&border_color=ddd&bg_color=fefefe&border_radius=2&show_owner=true&username=essentialkaos
 
 jobs:
-  build:
+  Generate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
