@@ -1,0 +1,167 @@
+name: Generate cards
+
+on:
+  schedule:
+    - cron: "0 3 */3 * *"
+  workflow_dispatch:
+
+env:
+  OPTIONS: title_color=333&text_color=333&icon_color=555&border_color=ddd&bg_color=fefefe&border_radius=2&show_owner=true&username=essentialkaos
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Generate pin card (ek)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: ${{env.OPTIONS}}&repo=ek
+          path: .cards/ek.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card (rbinstall)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: ${{env.OPTIONS}}&repo=rbinstall
+          path: .cards/rbinstall.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card (rpmbuilder)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: ${{env.OPTIONS}}&repo=rpmbuilder
+          path: .cards/rpmbuilder.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card (webkaos)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: ${{env.OPTIONS}}&repo=webkaos
+          path: .cards/webkaos.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card (bibop)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: ${{env.OPTIONS}}&repo=bibop
+          path: .cards/bibop.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card (kaos-repo)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: ${{env.OPTIONS}}&repo=kaos-repo
+          path: .cards/kaos-repo.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card (translit)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: ${{env.OPTIONS}}&repo=translit
+          path: .cards/translit.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card (perfecto)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: ${{env.OPTIONS}}&repo=perfecto
+          path: .cards/perfecto.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card (sslcli)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: ${{env.OPTIONS}}&repo=sslcli
+          path: .cards/sslcli.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card (aligo)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: ${{env.OPTIONS}}&repo=aligo
+          path: .cards/aligo.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card (branca)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: ${{env.OPTIONS}}&repo=branca
+          path: .cards/branca.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card (go-confluence)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: ${{env.OPTIONS}}&repo=go-confluence
+          path: .cards/go-confluence.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card (sslscan)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: ${{env.OPTIONS}}&repo=sslscan
+          path: .cards/sslscan.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card (sslcli)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: ${{env.OPTIONS}}&repo=sslcli
+          path: .cards/sslcli.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card (go-badge)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: ${{env.OPTIONS}}&repo=go-badge
+          path: .cards/go-badge.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card (rds)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: ${{env.OPTIONS}}&repo=rds
+          path: .cards/rds.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card (path)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: ${{env.OPTIONS}}&repo=path
+          path: .cards/path.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card (rep)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: ${{env.OPTIONS}}&repo=rep
+          path: .cards/rep.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add .cards/*.svg
+          git commit -m "Update cards" || exit 0
+          git push
