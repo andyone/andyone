@@ -12,10 +12,10 @@ jobs:
   Generate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Generate pin card (ek)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: pin
           options: ${{env.OPTIONS}}&repo=ek
@@ -23,7 +23,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate pin card (rbinstall)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: pin
           options: ${{env.OPTIONS}}&repo=rbinstall
@@ -31,7 +31,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate pin card (rpmbuilder)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: pin
           options: ${{env.OPTIONS}}&repo=rpmbuilder
@@ -39,7 +39,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate pin card (webkaos)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: pin
           options: ${{env.OPTIONS}}&repo=webkaos
@@ -47,7 +47,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate pin card (bibop)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: pin
           options: ${{env.OPTIONS}}&repo=bibop
@@ -55,7 +55,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate pin card (kaos-repo)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: pin
           options: ${{env.OPTIONS}}&repo=kaos-repo
@@ -63,7 +63,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate pin card (translit)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: pin
           options: ${{env.OPTIONS}}&repo=translit
@@ -71,7 +71,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate pin card (perfecto)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: pin
           options: ${{env.OPTIONS}}&repo=perfecto
@@ -79,7 +79,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate pin card (sslcli)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: pin
           options: ${{env.OPTIONS}}&repo=sslcli
@@ -87,7 +87,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate pin card (aligo)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: pin
           options: ${{env.OPTIONS}}&repo=aligo
@@ -95,7 +95,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate pin card (branca)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: pin
           options: ${{env.OPTIONS}}&repo=branca
@@ -103,7 +103,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate pin card (go-confluence)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: pin
           options: ${{env.OPTIONS}}&repo=go-confluence
@@ -111,7 +111,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate pin card (sslscan)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: pin
           options: ${{env.OPTIONS}}&repo=sslscan
@@ -119,7 +119,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate pin card (sslcli)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: pin
           options: ${{env.OPTIONS}}&repo=sslcli
@@ -127,7 +127,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate pin card (go-badge)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: pin
           options: ${{env.OPTIONS}}&repo=go-badge
@@ -135,7 +135,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate pin card (rds)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: pin
           options: ${{env.OPTIONS}}&repo=rds
@@ -143,7 +143,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate pin card (path)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: pin
           options: ${{env.OPTIONS}}&repo=path
@@ -151,7 +151,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate pin card (rep)
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@v2
         with:
           card: pin
           options: ${{env.OPTIONS}}&repo=rep
